@@ -1,7 +1,9 @@
 <?php
+
+	echo "efaohsogbog";
 	function call($controller, $action) {
 		// require controller specified
-		require_once('controllers/' . $controller . '.php');
+		require_once('controllers/'.$controller.'Controller.php');
 		
 		// get an instance of required controller
 		switch($controller){
@@ -17,8 +19,10 @@
 	$controllers = array('pages' => ['home', 'error'],
 						 'standard_game' => ['play', 'extend', 'addScore'] );
 	
+	
 	if (array_key_exists($controller, $controllers)) {
-		if (in_array($action, $controllers[$controller])) {
+		if (array($action, $controllers[$controller])) {
+			
 			call($controller, $action);
 		} else 
 			call('pages', 'error')

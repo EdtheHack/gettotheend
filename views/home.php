@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
 	<head>
 	</head>
@@ -8,7 +9,9 @@
 			<a href='/gettotheend'>Home</a>
 		</header>
 
-		<?php require_once('../routes.php'); ?>
+		<?php echo "oyaa"; 
+		require_once('..\routes.php'); 
+		echo "oyaaaa"?>
 
 		<footer>
 			Copyright
