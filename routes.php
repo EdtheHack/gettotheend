@@ -13,4 +13,15 @@
 		// do action
 		$controller->{ $action }();
 	}
+	
+	$controllers = array('pages' => ['home', 'error'],
+						 'standard_game' => ['play', 'extend', 'addScore'] );
+	
+	if (array_key_exists($controller, $controllers)) {
+		if (in_array($action, $controllers[$controller])) {
+			call($controller, $action);
+		} else 
+			call('pages', 'error')
+		{
+	}
 ?>

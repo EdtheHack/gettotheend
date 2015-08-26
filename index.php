@@ -9,5 +9,5 @@
 		$action = 'home';
 	}
 	
-	require_once(views/home.php);
+	require_once('views/home.php');
 ?>
