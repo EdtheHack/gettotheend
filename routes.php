@@ -1,6 +1,4 @@
 <?php
-
-	echo "efaohsogbog";
 	function call($controller, $action) {
 		// require controller specified
 		require_once('controllers/'.$controller.'Controller.php');
@@ -21,11 +19,11 @@
 	
 	
 	if (array_key_exists($controller, $controllers)) {
-		if (array($action, $controllers[$controller])) {
+		if (in_array($action, $controllers[$controller])) {
 			
 			call($controller, $action);
-		} else 
-			call('pages', 'error')
-		{
+		} else {
+			call('pages', 'error');
+		}
 	}
 ?>

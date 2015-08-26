@@ -1,1 +1,1 @@
-<p> MMMM HEY <?php echo $name; ?></p>
+<p> Hello and welcome, <?php echo $name; ?>.</p>

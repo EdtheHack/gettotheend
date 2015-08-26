@@ -2,12 +2,11 @@
 	class PagesController {
 		public function home() {
 			$name = "Dr.Lovedick";
-			echo "oyaaaaaaaaaaaaaaaa";
-			require_once('../views/home_content.php');
+			require_once __DIR__ . '/../views/home_content.php';
 		}
 		
 		public function error() {
-			require_once('../views/error.php');
-		{
+			require_once __DIR__ . '/../views/error.php';
+		}
 	}
 ?>

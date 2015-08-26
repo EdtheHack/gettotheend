@@ -9,9 +9,7 @@
 			<a href='/gettotheend'>Home</a>
 		</header>
 
-		<?php echo "oyaa"; 
-		require_once('..\routes.php'); 
-		echo "oyaaaa"?>
+		<?php require_once __DIR__ . '/../routes.php'; ?>
 
 		<footer>
 			Copyright
