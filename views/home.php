@@ -2,10 +2,10 @@
 
 <html>
 	<head>
+        <title> Get To The End </title>
 	</head>
 	<body>
 		<header>
-			<title> Get To The End </title>
 			<a href='/gettotheend'>Home</a>
 		</header>
 
